@@ -55,7 +55,6 @@ const [isFormVisible, setIsFormVisible] = useState(true);
       e.preventDefault();
   
       if (validateForm()) {
-        // Redirect to the store or perform any other action
         console.log('Form is valid. Redirecting to the store...');
       } else {
         console.log('Form validation failed. Please check the errors.');
@@ -126,9 +125,10 @@ const [isFormVisible, setIsFormVisible] = useState(true);
   const result = filteredData(products, selectedCategory, query);
   return (
     <>
-   {isFormVisible && (
+   {isFormVisible &&(
      <div class="flex min-h-full flex-col justify-center px-4 py-10 lg:px-20">
         <form class="w-full max-w-md  mx-auto space-y-10 " onSubmit={handleSubmit}>
+          <img  className ="Forms" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5EhDYM3sCRA4MQZk0Yde0UCPTjnDxyVHayRaRMrd5nGpVgttTnh_HzdppxQ&s" style={{position:"relative", left:"90px"}} ></img>
           <div>
             <label htmlFor="email" class="block text-sm font-medium leading-6 text-gray-900">
               Email address
@@ -178,7 +178,7 @@ const [isFormVisible, setIsFormVisible] = useState(true);
         <p class="mt-10 text-center text-sm text-gray-500">
           Not a member?
           <a href="#" class="font-semibold leading-6 text-indigo-600 hover:text-indigo-500">
-            Start a 14 day free trial
+           Register Here
           </a>
         </p>
       </div>
