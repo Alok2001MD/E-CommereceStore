@@ -19,14 +19,14 @@ const [isFormVisible, setIsFormVisible] = useState(true);
   const [selectedCategory, setSelectedCategory] = useState();
   // ----------- Input Filter -----------
   const [query, setQuery] = useState("");
-//functioning of cart button
+//functioning of cart button 
   const[cart,setCart]=useState([])
   const cartButton=(ProductTitle,Productimg)=>{
     setCart((prevCart) => [...prevCart, { title: ProductTitle }]);
     console.log(ProductTitle);
     }
 
-    //form validation
+    //form validatation
     const validateForm = () => {
       const errors = {};
   
