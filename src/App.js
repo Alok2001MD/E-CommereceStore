@@ -46,7 +46,7 @@ const [isFormVisible, setIsFormVisible] = useState(true);
       if(isValid){
         setIsFormVisible(false);
       }
-  
+      
   
       return isValid
     };
@@ -140,8 +140,12 @@ const [isFormVisible, setIsFormVisible] = useState(true);
                 type="email"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
+                placeholder="Enter Your Email"
                 required
-                class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                class="block w-full rounded-md border-0 py-1.5 text-gray-900 
+                shadow-sm ring-1 ring-inset ring-gray-300 
+                placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                
               />
               {errors.email && <div className="text-red-500">{errors.email}</div>}
             </div>
@@ -158,6 +162,7 @@ const [isFormVisible, setIsFormVisible] = useState(true);
                 type="password"
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
+                placeholder="Enter Your Password"
                 required
                 class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
               />
